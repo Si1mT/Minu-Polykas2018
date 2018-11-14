@@ -1,0 +1,30 @@
+[2018-11-14 14:32:18.943 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-14 14:32:20.192 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-14 14:32:20.192 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-14 14:32:20.269 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 76.3005ms 200 
+[2018-11-14 14:32:20.666 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-14 14:32:20.675 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"
+[2018-11-14 14:33:25.455 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-14 14:33:26.234 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-14 14:33:26.234 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-14 14:33:26.274 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 34.1564ms 200 
+[2018-11-14 14:33:26.407 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-14 14:33:26.416 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"
+[2018-11-14 14:34:08.339 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-14 14:34:09.088 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-14 14:34:09.088 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-14 14:34:09.127 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 32.8142ms 200 
+[2018-11-14 14:34:09.256 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-14 14:34:09.265 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"
+[2018-11-14 14:50:31.623 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-14 14:50:32.429 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-14 14:50:32.429 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-14 14:50:32.467 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 32.9653ms 200 
+[2018-11-14 14:50:32.586 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-14 14:50:32.596 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"
+[2018-11-14 14:51:02.207 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-14 14:51:02.849 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-14 14:51:02.849 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-14 14:51:02.888 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 33.8028ms 200 
+[2018-11-14 14:51:03.007 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-14 14:51:03.016 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"

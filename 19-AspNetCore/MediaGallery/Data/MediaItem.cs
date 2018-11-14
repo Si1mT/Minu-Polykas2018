@@ -13,6 +13,11 @@ namespace MediaGallery.Data
         public abstract string Thumbnail { get; set; }
         
         public MediaFolder ParentFolder { get; set; }
-        public IList Comments { get; set; }
+        public IList<Comments> Comments { get; set; }
+
+        public MediaItem()
+        {
+            Comments = new List<Comments>();
+        }
     }
 }
