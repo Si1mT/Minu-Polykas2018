@@ -1,0 +1,436 @@
+[2018-11-13 08:31:15.866 +02:00 INF] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\opilane\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2018-11-13 08:31:17.036 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:62003/  0
+[2018-11-13 08:31:17.036 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/  
+[2018-11-13 08:31:17.107 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 71.1613ms 200 
+[2018-11-13 08:31:17.476 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.Index (MediaGallery)
+[2018-11-13 08:31:17.485 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.Index (MediaGallery) - Validation state: "Valid"
+[2018-11-13 08:31:18.068 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.301 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.323 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Discriminator", "i"."ParentFolderId", "i"."Thumbnail", "i"."Title", "i"."FileName", "i"."Video_Latitude", "i"."Video_Longitude"
+FROM "Items" AS "i"
+WHERE "i"."Discriminator" = 'Photo'
+[2018-11-13 08:31:18.405 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.406 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Discriminator", "i"."ParentFolderId", "i"."Thumbnail", "i"."Title", "i"."FileName", "i"."Video_Latitude", "i"."Video_Longitude"
+FROM "Items" AS "i"
+WHERE "i"."Discriminator" = 'Photo'
+[2018-11-13 08:31:18.409 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.Index (MediaGallery), returned result Microsoft.AspNetCore.Mvc.ViewResult in 919.8143ms.
+[2018-11-13 08:31:18.436 +02:00 INF] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+[2018-11-13 08:31:18.480 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.481 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "i"."Id", "i"."Discriminator", "i"."ParentFolderId", "i"."Thumbnail", "i"."Title"
+FROM "Items" AS "i"
+WHERE "i"."Discriminator" = 'MediaFolder'
+[2018-11-13 08:31:18.566 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.567 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title"
+FROM "Items" AS "f"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND "f"."ParentFolderId" IS NULL
+ORDER BY "f"."Title"
+[2018-11-13 08:31:18.659 +02:00 INF] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 243.9556ms.
+[2018-11-13 08:31:18.659 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.Index (MediaGallery) in 1182.8200000000002ms
+[2018-11-13 08:31:18.668 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1633.7773ms 200 text/html; charset=utf-8
+[2018-11-13 08:31:18.673 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/4  
+[2018-11-13 08:31:18.673 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/corporate/img/logos/logo-shop-red.png  
+[2018-11-13 08:31:18.675 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.6946ms 404 
+[2018-11-13 08:31:18.683 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/5  
+[2018-11-13 08:31:18.684 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/15  
+[2018-11-13 08:31:18.684 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/19  
+[2018-11-13 08:31:18.686 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/20  
+[2018-11-13 08:31:18.693 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.693 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.693 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.694 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.701 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.716 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["4"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.716 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["20"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.716 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["15"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.716 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["19"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.716 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["5"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.719 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.719 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.719 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.719 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.719 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.956 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.956 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.956 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.956 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.956 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.975 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.975 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.975 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.975 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (6ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.977 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (9ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.983 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 266.6807ms.
+[2018-11-13 08:31:18.983 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 290.20050000000003ms
+[2018-11-13 08:31:18.983 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 300.7283ms 200 
+[2018-11-13 08:31:18.986 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/6  
+[2018-11-13 08:31:18.986 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:18.986 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["6"]) - Validation state: "Valid"
+[2018-11-13 08:31:18.987 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:18.987 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.988 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.991 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.991 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:18.992 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:18.994 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.522 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/corporate/img/icons/toggler.png  
+[2018-11-13 08:31:19.523 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.3728ms 404 
+[2018-11-13 08:31:19.523 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.3.0  
+[2018-11-13 08:31:19.533 +02:00 INF] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2'. Physical path: 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\assets\plugins\font-awesome\fonts\fontawesome-webfont.woff2'
+[2018-11-13 08:31:19.533 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 10.6408ms 200 font/woff2
+[2018-11-13 08:31:19.535 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 818.9677ms.
+[2018-11-13 08:31:19.538 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 845.5575ms
+[2018-11-13 08:31:19.539 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 822.2215ms.
+[2018-11-13 08:31:19.539 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 854.4216ms 200 
+[2018-11-13 08:31:19.539 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 837.8288ms
+[2018-11-13 08:31:19.539 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 853.0073ms 200 
+[2018-11-13 08:31:19.556 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/plugins/jquery.min.js  
+[2018-11-13 08:31:19.576 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 589.916ms.
+[2018-11-13 08:31:19.577 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 590.48480000000006ms
+[2018-11-13 08:31:19.577 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 590.8949ms 200 
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/22  
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/plugins/jquery-migrate.min.js  
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 861.7396ms.
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 884.6864ms
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 904.7361ms 200 
+[2018-11-13 08:31:19.578 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/assets/plugins/bootstrap/js/bootstrap.min.js  
+[2018-11-13 08:31:19.581 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:19.581 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["22"]) - Validation state: "Valid"
+[2018-11-13 08:31:19.581 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:19.582 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.582 +02:00 INF] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/assets/plugins/jquery-migrate.min.js'. Physical path: 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\assets\plugins\jquery-migrate.min.js'
+[2018-11-13 08:31:19.583 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.583 +02:00 INF] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/assets/plugins/bootstrap/js/bootstrap.min.js'. Physical path: 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\assets\plugins\bootstrap\js\bootstrap.min.js'
+[2018-11-13 08:31:19.583 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 4.937ms 200 application/javascript
+[2018-11-13 08:31:19.583 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/23  
+[2018-11-13 08:31:19.583 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:19.584 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.584 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["23"]) - Validation state: "Valid"
+[2018-11-13 08:31:19.584 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:19.584 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.584 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.585 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.586 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.586 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.0886ms 200 application/javascript
+[2018-11-13 08:31:19.586 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.594 +02:00 INF] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/assets/plugins/jquery.min.js'. Physical path: 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\assets\plugins\jquery.min.js'
+[2018-11-13 08:31:19.595 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 39.4597ms 200 application/javascript
+[2018-11-13 08:31:19.600 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/30  
+[2018-11-13 08:31:19.600 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:19.601 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["30"]) - Validation state: "Valid"
+[2018-11-13 08:31:19.609 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/24  
+[2018-11-13 08:31:19.609 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:19.609 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["24"]) - Validation state: "Valid"
+[2018-11-13 08:31:19.609 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:19.613 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.614 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:19.615 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.615 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.616 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.616 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.618 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.663 +02:00 ERR] MediaGallery.Controllers.HomeController: 
+System.IO.FileNotFoundException: Could not find file 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\gallery\id-logo-suur_520x478.png'.
+File name: 'C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\wwwroot\gallery\id-logo-suur_520x478.png'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)
+   at MediaGallery.FileSystem.LocalFileClient.GetFile(String path) in C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\FileSystem\LocalFileClient.cs:line 25
+   at MediaGallery.Controllers.HomeController.GetFile(Int32 id) in C:\Users\opilane\Desktop\Polykas2018-master\19-AspNetCore\MediaGallery\Controllers\HomeController.cs:line 232
+[2018-11-13 08:31:19.737 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 136.4686ms.
+[2018-11-13 08:31:19.737 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 136.8253ms
+[2018-11-13 08:31:19.737 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 137.194ms 200 
+[2018-11-13 08:31:19.738 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/28  
+[2018-11-13 08:31:19.738 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:19.738 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["28"]) - Validation state: "Valid"
+[2018-11-13 08:31:19.738 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:19.739 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.739 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:19.740 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:19.740 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:20.518 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/33  
+[2018-11-13 08:31:20.519 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:20.520 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["33"]) - Validation state: "Valid"
+[2018-11-13 08:31:20.520 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:20.521 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:20.524 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:20.528 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:20.528 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:21.524 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/32  
+[2018-11-13 08:31:21.525 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:21.526 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["32"]) - Validation state: "Valid"
+[2018-11-13 08:31:21.526 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:21.528 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:21.529 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:21.531 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:21.532 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:22.527 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:62003/Home/GetFile/31  
+[2018-11-13 08:31:22.527 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "GetFile", controller = "Home", page = "", area = ""}. Executing action MediaGallery.Controllers.HomeController.GetFile (MediaGallery)
+[2018-11-13 08:31:22.528 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery) with arguments (["31"]) - Validation state: "Valid"
+[2018-11-13 08:31:22.529 +02:00 INF] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.2.0-preview3-35497 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite' with options: None
+[2018-11-13 08:31:22.530 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:22.532 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Discriminator", "p"."ParentFolderId", "p"."Thumbnail", "p"."Title", "p"."FileName", "p"."Video_Latitude", "p"."Video_Longitude", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "p"
+LEFT JOIN (
+    SELECT "p.ParentFolder".*
+    FROM "Items" AS "p.ParentFolder"
+    WHERE "p.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "p"."ParentFolderId" = "t"."Id"
+WHERE "p"."Discriminator" IN ('Video', 'Photo', 'MediaFolder') AND ("p"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:22.534 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA foreign_keys=ON;
+[2018-11-13 08:31:22.535 +02:00 INF] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__id_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT "f"."Id", "f"."Discriminator", "f"."ParentFolderId", "f"."Thumbnail", "f"."Title", "t"."Id", "t"."Discriminator", "t"."ParentFolderId", "t"."Thumbnail", "t"."Title"
+FROM "Items" AS "f"
+LEFT JOIN (
+    SELECT "f.ParentFolder".*
+    FROM "Items" AS "f.ParentFolder"
+    WHERE "f.ParentFolder"."Discriminator" = 'MediaFolder'
+) AS "t" ON "f"."ParentFolderId" = "t"."Id"
+WHERE ("f"."Discriminator" = 'MediaFolder') AND ("f"."Id" = @__id_0)
+LIMIT 1
+[2018-11-13 08:31:22.537 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 9.1309ms.
+[2018-11-13 08:31:22.537 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 9.8541ms
+[2018-11-13 08:31:22.538 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 10.8153ms 200 
+[2018-11-13 08:31:22.538 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 2928.8749000000003ms.
+[2018-11-13 08:31:22.539 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 2929.4503ms
+[2018-11-13 08:31:22.539 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 2800.6809000000003ms.
+[2018-11-13 08:31:22.539 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2930.1156ms 200 
+[2018-11-13 08:31:22.539 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 2801.0303000000004ms
+[2018-11-13 08:31:22.539 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2801.5159ms 200 
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3853.5004000000004ms.
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 3876.2096ms
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3885.7966ms 200 
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 2986.2180000000003ms.
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 2986.7285ms
+[2018-11-13 08:31:22.570 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2986.968ms 200 
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 1066.2637ms.
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 1067.6732ms
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1069.0541ms 200 
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 2073.6687ms.
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 2074.1916ms
+[2018-11-13 08:31:22.593 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2075.4577ms 200 
+[2018-11-13 08:31:22.638 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method MediaGallery.Controllers.HomeController.GetFile (MediaGallery), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 3056.2235ms.
+[2018-11-13 08:31:22.638 +02:00 INF] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action MediaGallery.Controllers.HomeController.GetFile (MediaGallery) in 3056.5173ms
+[2018-11-13 08:31:22.638 +02:00 INF] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3060.6626ms 200 
