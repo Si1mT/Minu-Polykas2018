@@ -13144,11 +13144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Desktop\\Polykas2018-master\\19-AspNetCore\\MediaGallery\\MediaGallery.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Documents\\GitHub\\Minu-Polykas2018\\19-AspNetCore\\MediaGallery\\MediaGallery.csproj",
       "projectName": "MediaGallery",
-      "projectPath": "C:\\Users\\opilane\\Desktop\\Polykas2018-master\\19-AspNetCore\\MediaGallery\\MediaGallery.csproj",
+      "projectPath": "C:\\Users\\opilane\\Documents\\GitHub\\Minu-Polykas2018\\19-AspNetCore\\MediaGallery\\MediaGallery.csproj",
       "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Desktop\\Polykas2018-master\\19-AspNetCore\\MediaGallery\\obj\\",
+      "outputPath": "C:\\Users\\opilane\\Documents\\GitHub\\Minu-Polykas2018\\19-AspNetCore\\MediaGallery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
